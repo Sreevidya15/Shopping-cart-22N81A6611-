@@ -50,7 +50,7 @@
             </div>
             <div class="product">
                 <h2>KAJAL </h2>
-                <img src="kajal.png" width="200px" height="200px">
+                <img src="KAJAL.png" width="200px" height="200px">
                 <p>Price: $400</p>
                 <p>LAKME KAJAL</p>
                 <button class="add-to-cart" onclick="addToCart('KAJAL',400)">Add to cart</button>
@@ -89,7 +89,7 @@
         </div>
     </div>
 <script>
-    let cartItems = [];
+let cartItems = [];
 
 function addToCart(product, price) {
     cartItems.push({product, price});
@@ -104,7 +104,7 @@ function updateCart() {
     cartList.innerHTML = "";
     cartItems.forEach(item => {
         let listItem = document.createElement("li");
-        listItem.innerText = `${item.product} - $${item.price}`;
+        listItem.innerText = ${item.product} - $${item.price};
         cartList.appendChild(listItem);
         total += item.price;
     });
@@ -120,6 +120,7 @@ function updateCart() {
 function checksout() {
     alert('Thank you for your purchase!');
 }
+
 
 </script>
 </body>
